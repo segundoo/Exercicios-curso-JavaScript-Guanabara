@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo a nacionalidade</title>
+    <style>
+        body {
+            background: blue;
+            font: normal 16pt arial;
+            color: aliceblue;
+            text-align: center;
+            margin-top: 200px;
+        }
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>QUAL PAÍS VOCÊ NASCEU?</h1>
+    <input type="text" name="txtn" id="nc">
+    <input type="button" value="Verificar" onclick="ver()">
+    <div id="res">
+    <script>
+        function ver() {
+            var nc = window.document.querySelector('input#nc')
+            var res = window.document.querySelector('div#res')
+            if (nc.value == 'Brasil') {
+                res.innerHTML = '<p>você é <strong>brasileiro</strong>!</p>'
+            } else {
+                res.innerHTML = '<p>você é <strong>estrangeiro</strong>!</p>'
+            }
+        }
+    </script>   
+</body>
+</html>
