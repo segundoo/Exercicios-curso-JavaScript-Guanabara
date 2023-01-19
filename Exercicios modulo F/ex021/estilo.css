@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font: normal 15pt arial;
+
+}
+header {
+    color: rgb(147, 147, 147);
+    text-align: center;
+
+}
+section {
+    background: rgb(104, 47, 250);
+    font: normal 15pt arial;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+
+
+}
+select {
+    width: 150px;
+}
+footer {
+    color: aliceblue;
+    font-style: italic;
+    text-align: center;
+
+}
